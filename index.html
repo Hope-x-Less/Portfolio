@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Tesfamedhin Dessalegn - Aspiring software developer and creative tech learner. Portfolio of projects, skills, and learning journey."
+    />
+    <meta name="author" content="Tesfamedhin Dessalegn" />
+    <meta property="og:title" content="Tesfamedhin Dessalegn | Portfolio" />
+    <meta
+      property="og:description"
+      content="Modern portfolio featuring projects, skills, and creative technology journey."
+    />
+    <meta property="og:image" content="assets/images/tesfamedhin.jpg" />
+    <meta property="og:type" content="website" />
+    <title>Tesfamedhin Dessalegn | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Loading screen -->
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__spinner"></div>
+      <span class="loader__text">Loading experience...</span>
+    </div>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Sticky navigation -->
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="logo" href="#hero">TD</a>
+        <button
+          class="nav__toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Open menu"
+          type="button"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a class="nav__link" href="#hero">Home</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#journey">Journey</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Hero section -->
+      <section class="section hero" id="hero">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="glow glow--one"></div>
+          <div class="glow glow--two"></div>
+          <div class="floating-shapes">
+            <span class="shape shape--one"></span>
+            <span class="shape shape--two"></span>
+            <span class="shape shape--three"></span>
+          </div>
+        </div>
+        <div class="container hero__content">
+          <div class="hero__text reveal">
+            <p class="eyebrow">Aspiring Software Developer</p>
+            <h1>
+              Tesfamedhin Dessalegn
+              <span>Creative Tech Enthusiast</span>
+            </h1>
+            <p class="hero__intro">
+              I build modern, user-focused digital experiences while learning
+              Flutter and sharpening my web development skills. I am ambitious,
+              curious, and ready to contribute to forward-thinking teams.
+            </p>
+            <p class="hero__typing">
+              Currently exploring <span id="typed" aria-live="polite"></span>
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#projects">View Projects</a>
+              <a class="btn btn--ghost" href="#contact">Contact Me</a>
+            </div>
+            <div class="hero__stats">
+              <div>
+                <h3>10+</h3>
+                <p>Hands-on Learning Projects</p>
+              </div>
+              <div>
+                <h3>4</h3>
+                <p>Focus Areas in Tech</p>
+              </div>
+              <div>
+                <h3>100%</h3>
+                <p>Growth Mindset</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__media reveal">
+            <!-- Replace profile image at assets/images/tesfamedhin.jpg -->
+            <div class="hero__profile">
+              <img
+                src="assets/images/tesfamedhin.jpg"
+                alt="Portrait of Tesfamedhin Dessalegn"
+                width="360"
+                height="360"
+                decoding="async"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="hero__badge">Open to internships & bootcamps</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section class="section reveal" id="about">
+        <div class="container">
+          <div class="section__header">
+            <p class="eyebrow">About Me</p>
+            <h2>Passionate about building useful digital experiences</h2>
+          </div>
+          <div class="about__content">
+            <p>
+              I am Tesfamedhin Dessalegn, an aspiring software developer focused
+              on creating modern and meaningful digital products. I am actively
+              learning Flutter development and strengthening my web development
+              foundation to build fast, responsive, and visually compelling
+              experiences.
+            </p>
+            <p>
+              My curiosity drives me to explore AI tools, creative technology,
+              and emerging design trends. I enjoy turning ideas into practical
+              solutions, collaborating with people who love technology, and
+              continuously improving my craft.
+            </p>
+            <p>
+              I am preparing for internships and bootcamps where I can grow,
+              contribute, and learn from experienced developers. I believe in
+              consistent learning, thoughtful design, and building experiences
+              that feel both modern and human.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills section -->
+      <section class="section reveal" id="skills">
+        <div class="container">
+          <div class="section__header">
+            <p class="eyebrow">Skills</p>
+            <h2>Core skills & learning focus</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card reveal" style="--delay: 0.05s">
+              <h3>HTML</h3>
+              <p>Semantic structure and accessible layouts.</p>
+            </article>
+            <article class="skill-card reveal" style="--delay: 0.1s">
+              <h3>CSS</h3>
+              <p>Modern UI, animations, and responsive design.</p>
+            </article>
+            <article class="skill-card reveal" style="--delay: 0.15s">
+              <h3>JavaScript</h3>
+              <p>Interactive interfaces and clean logic.</p>
+            </article>
+            <article class="skill-card reveal" style="--delay: 0.2s">
+              <h3>Flutter</h3>
+              <p>Cross-platform apps and UI craftsmanship.</p>
+            </article>
+            <article class="skill-card reveal" style="--delay: 0.25s">
+              <h3>Git & GitHub</h3>
+              <p>Version control and collaboration.</p>
+            </article>
+            <article class="skill-card reveal" style="--delay: 0.3s">
+              <h3>Responsive Design</h3>
+              <p>Mobile-first layouts that scale.</p>
+            </article>
+            <article class="skill-card reveal" style="--delay: 0.35s">
+              <h3>UI/UX Basics</h3>
+              <p>Visual hierarchy and user-centered thinking.</p>
+            </article>
+            <article class="skill-card reveal" style="--delay: 0.4s">
+              <h3>AI Tools</h3>
+              <p>Experimenting with creative automation.</p>
+            </article>
+            <article class="skill-card reveal" style="--delay: 0.45s">
+              <h3>Problem Solving</h3>
+              <p>Logical thinking with continuous improvement.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects section -->
+      <section class="section reveal" id="projects">
+        <div class="container">
+          <div class="section__header">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work & learning builds</h2>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card reveal" style="--delay: 0.05s">
+              <div
+                class="project-card__image project-card__image--habit"
+                role="img"
+                aria-label="Habit Tracker preview"
+              >
+                <span>Habit Tracker</span>
+              </div>
+              <div class="project-card__body">
+                <h3>Habit Tracker</h3>
+                <p>
+                  A productivity and habit tracking application designed to
+                  help users build consistency, monitor progress, and improve
+                  daily routines.
+                </p>
+                <div class="project-card__meta">
+                  Flutter | UI Design | Local Storage
+                </div>
+                <div class="project-card__actions">
+                  <a
+                    class="btn btn--primary"
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live Demo</a
+                  >
+                  <a
+                    class="btn btn--ghost"
+                    href="https://github.com/Hope-x-Less"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal" style="--delay: 0.1s">
+              <div
+                class="project-card__image project-card__image--trading"
+                role="img"
+                aria-label="Trading Bot preview"
+              >
+                <span>Trading Bot</span>
+              </div>
+              <div class="project-card__body">
+                <h3>Trading Bot</h3>
+                <p>
+                  An automated trading bot project focused on analyzing market
+                  trends and executing trading strategies with efficiency and
+                  speed.
+                </p>
+                <div class="project-card__meta">
+                  Python | APIs | Automation
+                </div>
+                <div class="project-card__actions">
+                  <a
+                    class="btn btn--primary"
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live Demo</a
+                  >
+                  <a
+                    class="btn btn--ghost"
+                    href="https://github.com/Hope-x-Less"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal" style="--delay: 0.15s">
+              <div
+                class="project-card__image project-card__image--resume"
+                role="img"
+                aria-label="Resume Writer preview"
+              >
+                <span>Resume Writer</span>
+              </div>
+              <div class="project-card__body">
+                <h3>Resume Writer</h3>
+                <p>
+                  An AI-powered resume writing project designed to help users
+                  generate professional ATS-friendly resumes for job
+                  applications.
+                </p>
+                <div class="project-card__meta">
+                  AI Tools | Web Development | UI/UX
+                </div>
+                <div class="project-card__actions">
+                  <a
+                    class="btn btn--primary"
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live Demo</a
+                  >
+                  <a
+                    class="btn btn--ghost"
+                    href="https://github.com/Hope-x-Less"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal" style="--delay: 0.2s">
+              <div
+                class="project-card__image project-card__image--expense"
+                role="img"
+                aria-label="Expense Tracker App preview"
+              >
+                <span>Expense Tracker</span>
+              </div>
+              <div class="project-card__body">
+                <h3>Expense Tracker App</h3>
+                <p>
+                  A clean and intuitive expense tracker focused on budgeting and
+                  daily insights.
+                </p>
+                <div class="project-card__meta">Flutter | Firebase | UI/UX</div>
+                <div class="project-card__actions">
+                  <a
+                    class="btn btn--primary"
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live Demo</a
+                  >
+                  <a
+                    class="btn btn--ghost"
+                    href="https://github.com/Hope-x-Less"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal" style="--delay: 0.25s">
+              <div
+                class="project-card__image project-card__image--flutter"
+                role="img"
+                aria-label="Flutter learning projects preview"
+              >
+                <span>Flutter Learning</span>
+              </div>
+              <div class="project-card__body">
+                <h3>Flutter Learning Projects</h3>
+                <p>
+                  A collection of mini-apps exploring Flutter widgets, layouts,
+                  and state management.
+                </p>
+                <div class="project-card__meta">Flutter | Dart | UI</div>
+                <div class="project-card__actions">
+                  <a
+                    class="btn btn--primary"
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live Demo</a
+                  >
+                  <a
+                    class="btn btn--ghost"
+                    href="https://github.com/Hope-x-Less"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal" style="--delay: 0.3s">
+              <div
+                class="project-card__image project-card__image--portfolio"
+                role="img"
+                aria-label="Portfolio website preview"
+              >
+                <span>Portfolio Website</span>
+              </div>
+              <div class="project-card__body">
+                <h3>Portfolio Website</h3>
+                <p>
+                  A sleek personal portfolio built with modern HTML, CSS, and
+                  JavaScript.
+                </p>
+                <div class="project-card__meta">HTML | CSS | JavaScript</div>
+                <div class="project-card__actions">
+                  <a
+                    class="btn btn--primary"
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live Demo</a
+                  >
+                  <a
+                    class="btn btn--ghost"
+                    href="https://github.com/Hope-x-Less"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal" style="--delay: 0.35s">
+              <div
+                class="project-card__image project-card__image--ai"
+                role="img"
+                aria-label="AI creative projects preview"
+              >
+                <span>AI Creative</span>
+              </div>
+              <div class="project-card__body">
+                <h3>AI Creative Projects</h3>
+                <p>
+                  Experiments that blend creative visuals and automation using
+                  AI-powered tools.
+                </p>
+                <div class="project-card__meta">AI Tools | Design | Web</div>
+                <div class="project-card__actions">
+                  <a
+                    class="btn btn--primary"
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live Demo</a
+                  >
+                  <a
+                    class="btn btn--ghost"
+                    href="https://github.com/Hope-x-Less"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal" style="--delay: 0.4s">
+              <div
+                class="project-card__image project-card__image--coming"
+                role="img"
+                aria-label="Coming soon project preview"
+              >
+                <span>Coming Soon</span>
+              </div>
+              <div class="project-card__body">
+                <h3>Coming Soon Project</h3>
+                <p>
+                  A new build in progress focused on delivering a modern,
+                  high-impact experience.
+                </p>
+                <div class="project-card__meta">In Progress</div>
+                <div class="project-card__actions">
+                  <a
+                    class="btn btn--primary"
+                    href="https://example.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Live Demo</a
+                  >
+                  <a
+                    class="btn btn--ghost"
+                    href="https://github.com/Hope-x-Less"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience / Learning Journey section -->
+      <section class="section reveal" id="journey">
+        <div class="container">
+          <div class="section__header">
+            <p class="eyebrow">Learning Journey</p>
+            <h2>Progress and milestones</h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div>
+                <h3>Started learning programming</h3>
+                <p>
+                  Built foundational knowledge in web technologies and logical
+                  problem solving.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div>
+                <h3>Learning Flutter development</h3>
+                <p>
+                  Focused on cross-platform UI development and modern app design.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div>
+                <h3>Building portfolio projects</h3>
+                <p>
+                  Creating real-world projects to strengthen practical skills.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div>
+                <h3>Exploring AI & creative technology</h3>
+                <p>
+                  Experimenting with AI tools to enhance creative workflows.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__item">
+              <span class="timeline__dot"></span>
+              <div>
+                <h3>Preparing for internships & bootcamps</h3>
+                <p>
+                  Refining technical skills and building professional readiness.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section class="section reveal" id="contact">
+        <div class="container">
+          <div class="section__header">
+            <p class="eyebrow">Contact</p>
+            <h2>Let us build something meaningful together</h2>
+          </div>
+          <div class="contact__grid">
+            <form class="contact__form" action="#" method="post">
+              <label>
+                Name
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  autocomplete="name"
+                  required
+                />
+              </label>
+              <label>
+                Email
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                />
+              </label>
+              <label>
+                Message
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Tell me about your project"
+                  required
+                ></textarea>
+              </label>
+              <button class="btn btn--primary" type="submit">
+                Send Message
+              </button>
+              <p class="form__note">Form is a placeholder. Connect via Gmail below.</p>
+            </form>
+
+            <div class="contact__details">
+              <p>
+                I am open to collaboration, internships, mentorship, and
+                creative tech opportunities. Let us connect and build digital
+                experiences that feel premium, thoughtful, and user-centered.
+              </p>
+              <div class="contact__info">
+                <div>
+                  <h4>Email</h4>
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=tesfamedhind522@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >tesfamedhind522@gmail.com</a
+                  >
+                </div>
+                <div>
+                  <h4>GitHub</h4>
+                  <a
+                    href="https://github.com/Hope-x-Less"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >github.com/Hope-x-Less</a
+                  >
+                </div>
+                <div>
+                  <h4>LinkedIn</h4>
+                  <a
+                    href="https://www.linkedin.com/in/tesfamedhin-dessalegn-55b931385"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >linkedin.com/in/tesfamedhin-dessalegn-55b931385</a
+                  >
+                </div>
+              </div>
+              <div class="contact__cta">
+                <a
+                  class="btn btn--primary"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=tesfamedhind522@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Gmail</a
+                >
+                <a
+                  class="btn btn--ghost"
+                  href="https://www.linkedin.com/in/tesfamedhin-dessalegn-55b931385"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >LinkedIn</a
+                >
+                <a
+                  class="btn btn--ghost"
+                  href="https://github.com/Hope-x-Less"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >GitHub</a
+                >
+              </div>
+              <div class="socials">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=tesfamedhind522@gmail.com"
+                  aria-label="Gmail"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M4 5h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.01L12 12l8-5V7H4zm16 10V9l-8 5-8-5v8h16z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://github.com/Hope-x-Less"
+                  aria-label="GitHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.54 2.36 1.1 2.94.84.09-.65.35-1.1.64-1.35-2.22-.25-4.56-1.1-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.5 9.5 0 0 1 12 6.8c.85 0 1.7.11 2.5.33 1.9-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.92.36.31.69.93.69 1.88v2.79c0 .26.18.57.69.48A10 10 0 0 0 12 2z"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/tesfamedhin-dessalegn-55b931385"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M4.98 3.5a2.5 2.5 0 1 0 .02 5 2.5 2.5 0 0 0-.02-5zM3 8.98h4v12H3v-12zm7 0h3.84v1.64h.05c.54-1.02 1.86-2.1 3.83-2.1 4.1 0 4.86 2.7 4.86 6.2v6.26h-4v-5.56c0-1.33-.02-3.05-1.86-3.05-1.86 0-2.14 1.46-2.14 2.96v5.65h-4v-12z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+      <div class="container footer__content">
+        <div>
+          <h3>Tesfamedhin Dessalegn</h3>
+          <p>Designing modern digital experiences with curiosity and purpose.</p>
+        </div>
+        <div class="footer__links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#journey">Journey</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer__socials">
+          <a
+            href="https://github.com/Hope-x-Less"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/tesfamedhin-dessalegn-55b931385"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=tesfamedhind522@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Gmail</a
+          >
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Tesfamedhin Dessalegn. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+      ↑
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
